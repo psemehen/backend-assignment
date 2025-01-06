@@ -114,7 +114,7 @@ RSpec.describe Api::V1::CompaniesController, type: :request do
         errors = json_response["errors"]
 
         expect(errors).to include("name", "registration_number", "addresses.street", "addresses.city",
-                                  "addresses.country")
+          "addresses.country")
 
         expect(errors["name"]).to include("can't be blank")
         expect(errors["registration_number"]).to include("can't be blank")
