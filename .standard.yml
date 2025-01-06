@@ -1,0 +1,4 @@
+fix: true
+parallel: true
+format: progress
+ruby_version: 3.3.6
